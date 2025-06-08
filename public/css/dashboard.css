@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'YaldeviColombo';
+    src: url('../fonts/YaldeviColombo-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold generalmente es weight 600 */
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'YaldeviColombo', sans-serif;
+    background-color: #f4f8fc;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #00317E;
+    color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.user-icon {
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-size: 1.2rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+/* Ajustar tamaño de las imágenes del menú */
+.menu-item img {
+    width: 45px; /* Ajusta el ancho de la imagen */
+    height: 45px; /* Ajusta la altura de la imagen */
+}
+
+.menu-item:hover {
+    background-color: #002366;
+    border-radius: 8px;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 130px;
+}
+
+.dashboard-panels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.panel {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.panel h2 {
+    color: #00317E;
+    margin-bottom: 15px;
+}
+
+/* Status Bar */
+.status-bar {
+    background-color: white;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.status-bar h2 {
+    color: #00317E;
+    margin-bottom: 10px;
+    
+}
+
+.bar {
+    display: flex;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.bar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atendida {
+    background-color: #002366;
+    width: 60%;
+}
+
+.proceso {
+    background-color: #FFC107;
+    color: black;
+    width: 30%;
+}
+
+.cancelada {
+    background-color: #D32F2F;
+    width: 10%;
+}
+
+.legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.square {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.square.atendida {
+    background-color: #002366;
+}
+
+.square.proceso {
+    background-color: #FFC107;
+}
+
+.square.cancelada {
+    background-color: #D32F2F;
+}

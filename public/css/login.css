@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'YaldeviColombo';
+    src: url('../fonts/YaldeviColombo-SemiBold.ttf') format('truetype');
+  }
+  
+  body {
+    font-family: 'YaldeviColombo', sans-serif;
+    margin: 0;
+    background-color: #fefafa;
+  }
+  
+  .login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-left {
+    flex: 1;
+    background-color: #fdfafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #00317E;
+    border: 2px solid #00317E;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 28px;
+  }
+  
+  .robot-img {
+    max-width: 130%;
+    height: auto;
+  }
+  
+  .login-right {
+    flex: 1;
+    background-color: #f0f7ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+    color: #00317E;
+    margin-top: 40px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 87%;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    font-size: 1rem;
+    border: none;
+    background-color: #ddd;
+    border-radius: 2px;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    pointer-events: none;
+    font-size: 1.2rem;
+  }
+
+  .input-group input:focus {
+    outline: 2px solid #00317E;
+    transition: outline 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  
+  .input-group input::placeholder {
+    color: #888;
+  }
+  
+  
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #00317E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #00317E;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'YaldeviColombo';
+    src: url('../fonts/YaldeviColombo-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'YaldeviColombo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f8fc;
+    color: #333;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Top blue bar */
+.top-bar {
+    height: 40px;
+    background-color: #00317E;
+}
+
+/* Container layout */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo-banco {
+    height: 100px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos para los botones de navegación */
+.nav-button {
+    background-color: #fff;
+    border: 1px solid #00317E;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #00317E;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #00317E;
+    color: white;
+}
+
+/* Estilos para las imágenes dentro de los botones */
+.nav-button img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    filter: brightness(0) saturate(100%) invert(15%) sepia(99%) saturate(3731%) hue-rotate(219deg) brightness(85%) contrast(97%);
+}
+
+.nav-button:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.bot-image {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.hero-text p {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Button group */
+.button-group {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.action-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #e1ecf4;
+    color: #00317E;
+    border: 2px solid #00317E;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.action-button.green {
+    background-color: #d4f7d4;
+    color: #1a7f1a;
+    border-color: #1a7f1a;
+}
+
+.action-button:hover {
+    background-color: #00317E;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    border-top: 1px solid #e1e5eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .bot-image {
+        max-width: 200px;
+    }
+}

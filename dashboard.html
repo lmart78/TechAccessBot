@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - TechAccessBot</title>
+    <link rel="stylesheet" href="public/css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-info">
+                <img src="public\img\icons8-usuario-96 (1).png" alt="Usuario" class="user-icon">
+                <p class="user-name">Laura Martinez</p>
+            </div>
+            <nav class="menu">
+                <a href="#" class="menu-item">
+                    <img src="public\img\icons8-histórico-96 (1).png" alt="">
+                    Historico Solicitudes
+                </a>
+                <a href="#" class="menu-item">
+                    <img src="public\img\icons8-nueva-ventana-96.png" alt="">
+                    Nueva Solicitud
+                </a>
+                <a href="index.html" class="menu-item">
+                    <img src="public\img\icons8-cerrar-sesión-96.png" alt="">
+                    Cerrar Sesión
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="dashboard-header">
+                <img src="public\img\banco-de-bogota.webp" alt="Banco de Bogotá" class="logo">
+                <h1>TechAccessBot</h1>
+            </header>
+
+            <section class="dashboard-panels">
+                <div class="panel">
+                    <h2>Solicitudes por Mes</h2>
+                    <img src="public\img\sol_mes.PNG" alt="Gráfico de barras">
+                </div>
+                <div class="panel">
+                    <h2>Solicitudes por Fecha</h2>
+                    <img src="public\img\sol_fecha.PNG" alt="Gráfico de líneas">
+                </div>
+            </section>
+
+            <section class="status-bar">
+                <h2>Solicitudes por Estado</h2>
+                <div class="bar">
+                    <div class="atendida">17</div>
+                    <div class="proceso">5</div>
+                    <div class="cancelada">2</div>
+                </div>
+                <div class="legend">
+                    <span><span class="square atendida"></span> Atendida</span>
+                    <span><span class="square proceso"></span> Nueva / En proceso</span>
+                    <span><span class="square cancelada"></span> Cancelada</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

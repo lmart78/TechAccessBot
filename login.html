@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechAccessBot - Iniciar Sesión</title>
+  <link rel="stylesheet" href="public/css/login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-left">
+      <a href="index.html" class="back-btn">↩</a>
+      <img src="public/img/robot-6654032_1280.png" alt="Robot TechAccessBot" class="robot-img" />
+    </div>
+    <div class="login-right">
+      <img src="public\img\banco-de-bogota.webp" alt="Banco de Bogotá" class="logo" />
+      <h1>TechAccessBot</h1>
+      <form class="login-form" id="loginForm">
+        <label for="correo">Correo</label>
+        <div class="input-group">
+          <input type="email" id="correo" placeholder="Correo electrónico" required />
+          <span class="icon">
+            <img src="public\img\icons8-usuario-96 (2).png" alt="Usuario" style="height: 20px; width: 20px;">
+          </span>
+        </div>
+      
+        <label for="contrasena">Contraseña</label>
+        <div class="input-group">
+          <input type="password" id="contrasena" placeholder="Contraseña" required />
+          <span class="icon toggle-password" id="togglePassword">
+            <img src="public\img\icons8-ojo-96.png" alt="Mostrar/Ocultar contraseña" style="height: 20px; width: 20px;">
+          </span>
+        </div>
+      
+        <button type="submit" class="btn-login">Iniciar sesión</button>
+        <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+      </form>
+    </div>
+  </div>
+  <script>
+    // Mostrar/Ocultar contraseña
+    const toggle = document.getElementById("togglePassword");
+    const passwordInput = document.getElementById("contrasena");
+  
+    toggle.addEventListener("click", () => {
+      const type = passwordInput.type === "password" ? "text" : "password";
+      passwordInput.type = type;
+      toggle.textContent = type === "password" ? "🙈" : "👁️";
+    });
+  
+    // Validación del formulario y redirección
+    const loginForm = document.getElementById("loginForm");
+  
+    loginForm.addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevenir el envío normal del formulario
+      
+      const email = document.getElementById("correo").value.trim();
+      const password = passwordInput.value.trim();
+  
+      if (email === "" || password === "") {
+        alert("Por favor completa todos los campos.");
+        return false;
+      }
+      
+      // Redirección después de validación exitosa
+      window.location.href = 'dashboard.html';
+      return true;
+    });
+  </script>
+</body>
+</html>
